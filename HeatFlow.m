@@ -19,7 +19,7 @@ u = zeros(1,nx);
 u(1) = 100;
 
 v = zeros(nx,nx);
-v(1, :) = 100;
+v(1, :) = 1500;
 
 for t = 1:nt
     v(2:end-1, 2:end-1) = v(2:end-1, 2:end-1) + r * ( ...
