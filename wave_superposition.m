@@ -17,3 +17,5 @@ end
 figure;
 x = linspace(-40,40);
 plot(x,list);
+
+
