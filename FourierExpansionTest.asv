@@ -31,4 +31,3 @@ end
 
 R = rref(reduced);
 disp(R);
-
