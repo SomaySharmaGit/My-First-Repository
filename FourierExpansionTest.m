@@ -4,7 +4,7 @@ x = linspace(-10,10,100);
 
 y = sin(x);
 
-n = 3;
+n = 40;
 
 a = zeros(1,n+1);
 b = zeros(1+n);
@@ -13,12 +13,12 @@ reduced = zeros(n,n+1);
 
 
 
-values = linspace(0,1,n);
+values = linspace(-10,10,n);
 
 outputs =  zeros(1,n);
 
 for i=1:n
-    outputs(i) = sin(2.5*values(i));
+    outputs(i) = sin(2*values(i));
 
 end
 
