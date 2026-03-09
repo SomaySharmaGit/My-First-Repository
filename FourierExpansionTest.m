@@ -4,7 +4,7 @@ x = linspace(-10,10,100);
 
 y = sin(x);
 
-n = 40;
+n = 4;
 
 a = zeros(1,n+1);
 b = zeros(1+n);
@@ -18,7 +18,7 @@ values = linspace(-10,10,n);
 outputs =  zeros(1,n);
 
 for i=1:n
-    outputs(i) = sin(2*values(i));
+    outputs(i) = sin(1.5*values(i));
 
 end
 
@@ -50,7 +50,7 @@ plot(temp,y);
 hold();
 plot(values,outputs);
 
-outputs
+outputs;
 
 
 
