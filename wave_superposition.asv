@@ -1,0 +1,41 @@
+clc, clearvars
+
+sum = zeros(1,100);
+n = 5;
+
+angularFrequency =  rand(1,n);
+phaseShift = rand(1,n);
+amplitude = rand(1,n);
+
+perfectSquare = 1;
+while 1 
+   
+    if (perfectSquare+1)^2 > n
+        perfectSquare = perfectSquare+1;
+        break
+    end
+     perfectSquare = perfectSquare+1;
+    
+    
+end
+disp(perfectSquare);
+
+figure;
+
+for i=1:n
+    x = linspace(1,100);
+    y = amplitude(i) * sin(angularFrequency(i) * x + phaseShift(i));
+    subplot(perfectSquare,perfectSquare,i);
+    plot(x,y);
+    sum(1,:) = sum(1,:) + y;
+end
+
+figure;
+x = linspace(1,100);
+plot(x,sum);
+
+
+reduced = zeros(n,n+1);
+
+
+
