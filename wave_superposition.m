@@ -1,7 +1,7 @@
 clc, clearvars
 
 sum = zeros(1,100);
-n = 10;
+n = 4;
 
 angularFrequency =  rand(1,n)*10;
 phaseShift = rand(1,n)*5;
