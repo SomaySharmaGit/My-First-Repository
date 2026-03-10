@@ -9,7 +9,7 @@ n = 4;
 
 reduced = zeros(n,n+1);
 values = linspace(-10,10,n);
-outputs = sin(2*values);
+outputs = sin(values);
 
 
 reduced(:,1)=1;
@@ -17,10 +17,9 @@ reduced(:,n+1) = outputs;
 
 
 for i=1:n
-<<<<<<< HEAD
     outputs(i) = sin(1.5*values(i));
 
-=======
+
     for j=2:n
         if(mod(j,2)==0)
             reduced(i,j) = cos((j/2) * values(i));
@@ -28,7 +27,7 @@ for i=1:n
             reduced(i,j) = sin((j-1)/2 * values(i));
         end
     end
->>>>>>> 80b482049a77861e0f30d0808a49987f97e88eb6
+
 end
 
 
@@ -42,13 +41,11 @@ plot(temp,y);
 hold();
 plot(values,outputs);
 
-<<<<<<< HEAD
+
 outputs;
 
 
 
-=======
->>>>>>> 80b482049a77861e0f30d0808a49987f97e88eb6
 function r = approx(constants, n, space)
     r = zeros(1,length(space)) + constants(1);
     for i=1:n
